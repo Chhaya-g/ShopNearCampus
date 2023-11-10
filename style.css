@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-inner img{
+    height: 70vh;
+    width: 100%;
+
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNearCampus</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <link rel="icon" href="images/favicon.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+
+</head>
+
+<body style="background-color: #FFF0F5;">
+
+    <!-- Modal -->
+    <div class="modal fade modal-lg" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #ECEE81;">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Let's be VocalforLocal this Diwali!!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/popup.jpg" alt="pop-up" width="100%" height="350px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background-color: #D0D4CA;">Close</button>
+                    <button type="button" class="btn btn-primary"><a href="localvendors.html"
+                            style="color: white;text-decoration: none;">Visit</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFE4D6;">
+        <div class="container-fluid me-2">
+            <a class="navbar-brand" href="#"><img src="images/favicon.jpeg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top my-1 mx-2"
+                    style="margin: 0 12px 0 0;"><strong>ShopNearCampus</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <div class="dropdown me-3">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="background-color: #D0D4CA;font-size: 18px;font-weight: bold;">
+                            Find Stores
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="restaurants.html"
+                                    style="font-weight: bold;">Cafes/Restaurants</a></li>
+                            <li><a class="dropdown-item" href="boutique.html" style="font-weight: bold;">Boutiques &
+                                    Clothing</a></li>
+                            <li><a class="dropdown-item" href="localvendors.html" style="font-weight: bold;">Local
+                                    Vendors</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                            style="font-size: 18px;font-weight: bold;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyaboutus"
+                            style="font-size: 18px;font-weight: bold;color: black;">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner3.jpg" class="d-block w-100" alt="discount banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner2.jpg" class="d-block w-100" alt="discount banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner1.jpg" class="d-block w-100" alt="discount banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner4.jpg" class="d-block w-100" alt="discount banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>fourth slide label</h5>
+              <p>Some representative placeholder content for the fourth slide.</p> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- cards -->
+    <!-- Explore -->
+    <section class="explore py-3 mt-2" style="background-color: #FACBEA;">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1>Explore</h1>
+                <hr class="w-25 m-auto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card">
+                    <img src="images/experience.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Experience</h5>
+                        <p class="card-text">Check out the experience of woking with us</p>
+                        <a href="experience.html" class="btn btn-primary">Experiences</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card">
+                    <img src="images/collaboration.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Collaborations</h5>
+                        <p class="card-text">Reach out here for collaborations and promotions</p>
+                        <a href="collaborations.html" class="btn btn-primary">Collaborate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <div class="card">
+                    <img src="images/eventfinal.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Calender</h5>
+                        <p class="card-text">Check the upcoming Events and Register for the same</p>
+                        <a href="events.html" class="btn btn-primary">Upcoming Events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success stories -->
+    <div style="background-color: #D988B9;">
+        <div class="container">
+            <div class="text-center my-3">
+                <h1>Entrepreneurial Success Stories</h1>
+                <hr class="w-25 m-auto">
+            </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                        style="color: black;" style="background-color: #FFF0F5;">
+                        ‘Belle Chic Boutique’-Neha Verma (Owner)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample"
+                    style="background-color: #FFF0F5;">
+                    <div class="accordion-body">
+                        <strong>"A Fashion Designing Graduate: From a dream to reality,</strong> my boutique journey
+                        began. With
+                        passion, creativity, and a sprinkle of determination, I curated a space where style meets
+                        individuality. Each piece tells a story, and every customer leaves with a smile. Here's to
+                        the future, adorned with endless possibilities."
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                        style="color: black;" style="background-color: #FFF0F5;">
+                        ‘Shri Mata Diwali Mart’-Ram Bihari (Street Vendor)
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample"
+                    style="background-color: #FFF0F5;">
+                    <div class="accordion-body">
+                        <strong>Starting small, I set up a humble stall on the bustling local street.</strong> With
+                        determination
+                        and creativity, I crafted unique decorations, catching the eye of curious passersby.
+                        Word-of-mouth and good customer relations soon propelled my venture, leading to a loyal
+                        customer base. Over the years, I expanded my offerings, introducing innovative designs and
+                        eco-friendly options. Today, I proudly stand as a beacon of festive spirit, proving that
+                        dreams ignited on the streets can light up countless homes.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                        style="color: black;" style="background-color: #FFF0F5;">
+                        ‘Arpan Cafe’-Ashutosh M. (Co-Founder)
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample"
+                    style="background-color: #FFF0F5;">
+                    <div class="accordion-body">
+                        <strong>“I, a determined entrepreneur, proudly steer this ship alongside my fellow handicapped
+                            comrades.</strong>
+                        Faced with adversity, we transformed our challenges into strengths, creating a haven of
+                        inclusivity Wheelchair-accessible ramps and thoughtfully designed spaces echo our commitment
+                        to all patrons.
+                        Through tenacity and unwavering belief, we've brewed a community that thrives on unity,
+                        showing the world that limitations are mere illusions. With every sip, we share our story,
+                        proving that the human spirit can overcome any obstacle.”
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card text-center" style="background-color: #D988B9;">
+        <div class="card-header" style="color: black;">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" style="color: black;">More Entrepreneurial Success Stories</h5>
+            <p class="card-text" style="color: black;">Have a look on the section featuring success stories and
+                entrepreneurial journeys
+                of local business owners. Inspiration for students to consider entrepreneurship.
+            </p>
+            <a href="stories.html" class="btn btn-primary">Head to stories</a>
+        </div>
+        <div class="card-footer" style="color: black;">
+            Posted Recently
+        </div>
+    </div>
+
+
+
+    <!-- about us -->
+    <div style="background-color: #FBA1B7;">
+        <div class="heading" id="scrollspyaboutus">
+            <h1>About us</h1>
+            <p style="color: black;">"Empowering local dreams, where every student's choice fuels the heartbeat of
+                community growth."
+            </p>
+        </div>
+        <div class="contained">
+            <section class="about">
+                <div class="about-image">
+                    <img src="images/VENDOR.jpg" alt="About us">
+                </div>
+                <div class="about-content">
+                    <h2>Connecting & empowering Local Vendors</h2>
+                    <p style="color: black;">Welcome to ShopNearCampus, where the spirit of community and
+                        entrepreneurship converge. Our platform
+                        is driven by the belief that local businesses and student communities can thrive together. We're
+                        on
+                        a mission to simplify and amplify your campus experience, fostering meaningful connections
+                        between
+                        students and the unique gems in our local business landscape. Embrace a symbiotic journey of
+                        growth
+                        and exploration with ShopNearCampus—because when community and commerce unite, extraordinary
+                        things
+                        happen. Welcome to a world of possibilities!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- feedback and suggestion -->
+    <div class="row mx-1 my-3" style="background-color: #FFF0F5;">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-body" style="background-color: #FFD1DA;">
+                    <h5 class="card-title">Have a Business idea?</h5>
+                    <p class="card-text">No worries, we've got your back, tell us your business idea and we'll look into
+                        it.</p>
+                    <a href="business.html" class="btn btn-primary">Business idea</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body" style="background-color: #FFD1DA;">
+                    <h5 class="card-title">Feedback & Suggestion</h5>
+                    <p class="card-text">Give us your precious feedback and suggestions for our website</p>
+                    <a href="feedback.html" class="btn btn-primary">Give Feedback</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-3">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppetrcase mb-4 font-weight-bold text-warning">ShopNearCampus</h5>
+                    <p>Welcome to ShopNearCampus where the pulse of local innovation meets the heartbeat of campus life.
+                        Discover a seamless fusion of community and commerce, connecting students with unique local
+                        businesses. Immerse yourself in a tapestry of experiences, from exclusive discounts to vibrant
+                        events.Elevate your campus experience with ShopNearCampus.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Home</h5>
+                    <p><a href="restaurants.html" class="text-white" style="text-decoration: none;">Cafes &
+                            Restaurants</a></p>
+                    <p><a href="boutique.html" class="text-white" style="text-decoration: none;">Boutiques &
+                            Clothing</a></p>
+                    <p><a href="localvendors.html" class="text-white" style="text-decoration: none;">Local vendors</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
+                    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScPZwTQV-37d3HVU42rqz9WuT8is8qKQDXvaOezmBvztsHJ6Q/viewform?usp=sf_link"
+                            class="text-white" style="text-decoration: none;">Register a Business</a></p>
+                    <p><a href="#scrollspyaboutus" class="text-white" style="text-decoration: none;">About</a></p>
+                    <p><a href="stories.html" class="text-white" style="text-decoration: none;">Success Stories</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
+                    <p><i class="" fas fa-home mr-3></i>Mumbai, MUM 2023, IND</p>
+                    <p><i class="" fas fa-envelope mr-3></i>shopnearcampus2023@gmail.com</p>
+                    <p><i class="" fas fa-phone mr-3></i>+91 61114 61114</p>
+                    <p><i class="" fas fa-print mr-3></i>+01 222 333 4444</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-7">
+                    <p>Copyright @2023 All rights reserved by:</p>
+                    <a href="#" style="text-decoration: none;"><strong class="text-warning">ShopNearCampus</strong></a>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i
+                                        class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#exampleModal').modal('show');
+        });
+    </script>
+
+
+</body>
+
+</html>
